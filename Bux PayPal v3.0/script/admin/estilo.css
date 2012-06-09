@@ -1,0 +1,141 @@
+body{
+	margin:0;
+	padding:0;
+	background : #ccc;
+	font:70% Arial, Helvetica, sans-serif; 
+	color:#555;
+	line-height:150%;
+	text-align:left;
+}
+a{
+	text-decoration:none;
+	color:#057fac;
+}
+a:hover{
+	text-decoration:none;
+	color:#999;
+}
+h1{
+	font-size:140%;
+	margin:0 20px;
+	line-height:80px;	
+}
+h2{
+	font-size:120%;
+}
+#container{
+	margin:0 auto;
+	background:#fff;
+}
+#content{margin:0 20px;}
+p.sig{	
+	margin:0 auto;
+	width:680px;
+	padding:1em 0;
+}
+form{
+	margin:0;
+	padding:0;
+}
+
+
+
+
+
+
+#framecontent{
+position: absolute;
+top: 0;
+bottom: 0; 
+left: 0;
+width: 200px; /*Width of frame div*/
+height: 100%;
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+background : #ccc;
+color: white;
+}
+
+#maincontent{
+position: fixed;
+top: 0; 
+left: 200px; /*Set left value to WidthOfFrameDiv*/
+right: 0;
+bottom: 0;
+overflow: auto; 
+background: #fff;
+}
+
+.innertube{
+margin: 15px; /*Margins for inner DIV inside each DIV (to provide padding)*/
+}
+
+* html body{ /*IE6 hack*/
+padding: 0 0 0 200px; /*Set value to (0 0 0 WidthOfFrameDiv)*/
+}
+
+* html #maincontent{ /*IE6 hack*/
+height: 100%; 
+width: 100%; 
+}
+
+
+
+
+
+
+
+#nav {
+	width: 170px;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	padding-bottom: 10px;
+/*	background: url(bottom.gif) no-repeat  right bottom;  */
+	color: #fff;
+}
+#nav, #nav ul, #nav li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+}
+#nav li {
+
+	clear: both;
+		background: url(sdmenu/title.gif) repeat-x;
+	overflow: hidden;
+}
+#nav li b {
+        display: block;
+        height: 25px;
+		color: white;
+		background: url(sdmenu/title.gif) repeat-x;
+		width: 100%;
+        padding: 0px 0px 0px 10px;
+		cursor: default;
+}
+
+#nav li ul li {
+        font-size: 96%;
+        border: none;
+	background : #ccc;
+}
+#nav li ul li a {
+/*        display: block;
+        height: 1.2em;
+	width: 95%;
+        padding: 2px;
+	text-decoration: none;
+        color: white;
+        background: #99F;color fondo menu*/
+	padding: 5px 10px;
+	background: #eee;
+	display: block;
+	border-bottom: 1px solid #ddd;
+	color: #066;
+	border-bottom: 1px solid #ddd;
+}
+#nav li ul li a:hover {
+        color: white;
+	background : #ccc;
+	background : #066 url(sdmenu/linkarrow.gif) no-repeat right center;
+}

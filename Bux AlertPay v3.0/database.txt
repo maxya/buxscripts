@@ -1,0 +1,401 @@
+-- phpMyAdmin SQL Dump
+-- version 2.8.1
+-- http://www.phpmyadmin.net
+-- 
+-- Servidor: localhost
+-- Tiempo de generación: 18-01-2008 a las 07:01:20
+-- Versión del servidor: 5.0.21
+-- Versión de PHP: 5.1.4
+-- 
+-- Base de datos: `22`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `tb_ads`
+-- 
+
+CREATE TABLE `tb_ads` (
+  `id` int(11) NOT NULL auto_increment,
+  `user` varchar(150) collate latin1_general_ci NOT NULL,
+  `ip` varchar(15) collate latin1_general_ci NOT NULL,
+  `tipo` varchar(150) collate latin1_general_ci NOT NULL,
+  `visitime` varchar(150) collate latin1_general_ci NOT NULL,
+  `ident` varchar(150) collate latin1_general_ci NOT NULL,
+  `fechainicia` varchar(150) collate latin1_general_ci NOT NULL,
+  `paypalname` varchar(150) collate latin1_general_ci NOT NULL,
+  `paypalemail` varchar(150) collate latin1_general_ci NOT NULL,
+  `plan` varchar(150) collate latin1_general_ci NOT NULL,
+  `bold` varchar(150) collate latin1_general_ci NOT NULL,
+  `highlight` varchar(150) collate latin1_general_ci NOT NULL,
+  `url` varchar(150) collate latin1_general_ci NOT NULL,
+  `description` varchar(150) collate latin1_general_ci NOT NULL,
+  `category` varchar(150) collate latin1_general_ci NOT NULL,
+  `members` varchar(150) collate latin1_general_ci NOT NULL default '0',
+  `outside` varchar(150) collate latin1_general_ci NOT NULL default '0',
+  `total` varchar(150) collate latin1_general_ci NOT NULL default '0',
+  KEY `id` (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=29 ;
+
+-- 
+-- Volcar la base de datos para la tabla `tb_ads`
+-- 
+
+INSERT INTO `tb_ads` VALUES (1, '', '', 'ads', '', '', '1195231256', '', 'email@domain.com', '10000', '1', '1', 'http://www.domain.com', 'Categoria 1', '1', '5', '0', '0');
+INSERT INTO `tb_ads` VALUES (3, '', '', 'ads', '', '', '1195231395', '', 'nico@nico.com', '1000', '1', '1', 'http://hola.com', 'Categoria 2', '2', '1', '0', '0');
+INSERT INTO `tb_ads` VALUES (6, '', '', 'ads', '', '', '1195493883', '', 'admin', '1000', '', '', 'http://wwwwwww.asdasdasd.comasdasdada', 'Categoria 3', '3', '0', '0', '0');
+INSERT INTO `tb_ads` VALUES (7, '', '', 'ads', '', '', '1195494307', '', 'admin', '1000', '', '', 'http://wwwwwww.asdasdasd.comasdasdada', 'Categoria 4', '4', '0', '0', '0');
+INSERT INTO `tb_ads` VALUES (8, '', '', 'ads', '', '', '1195494452', '', 'admin', '1000', '', '', 'http://wwwwwww.asdasdasd.comasdasdada', 'Categoria 5', '5', '0', '0', '0');
+INSERT INTO `tb_ads` VALUES (9, '', '', 'ads', '', '', '1195499546', '', '1', '30000', '1', '', '1', 'Categoria 6', '6', '0', '0', '0');
+INSERT INTO `tb_ads` VALUES (10, '', '', 'ads', '', '', '1195499547', '', '1', '30000', '1', '', '1', 'Categoria 7', '7', '1', '0', '0');
+INSERT INTO `tb_ads` VALUES (11, '', '', 'ads', '', '', '1195499548', '', '1', '500', '', '', 'http://wwwwwwwwwwwwwwwwwwwwwww.comomo', 'Categoria 8', '8', '0', '0', '0');
+INSERT INTO `tb_ads` VALUES (12, '', '', 'ads', '', '', '1195499621', '', 'admin', '1000', '', '', '9', 'Categoria 9', '9', '0', '0', '0');
+INSERT INTO `tb_ads` VALUES (13, '', '', 'ads', '', '', '1195499622', '', 'admin', '1000', '', '', '10', 'Categoria 10', '10', '1', '1', '0');
+INSERT INTO `tb_ads` VALUES (22, 'sol', '', 'visit', '1195673371', '21', '', '', '', '', '', '', '', '', '', '0', '0', '0');
+INSERT INTO `tb_ads` VALUES (23, 'admin', '', 'visit', '1196562956', '1', '', '', '', '', '', '', '', '', '', '0', '0', '0');
+INSERT INTO `tb_ads` VALUES (24, 'admin', '', 'ads', '', '', '', '', '', '1000', '1', '1', 'http://www.psiscofxp.com', 'PsicoFxp', '1', '0', '0', '0');
+INSERT INTO `tb_ads` VALUES (25, 'sol', '', 'visit', '1197057471', '1', '', '', '', '', '', '', '', '', '', '0', '0', '0');
+INSERT INTO `tb_ads` VALUES (26, '', '', 'ads', '', '', '1197057485', '', 'email@domain.com', '30000', '1', '', 'http://www.www.com', 'asdaaa', '7', '0', '0', '0');
+INSERT INTO `tb_ads` VALUES (27, '', '', 'ads', '', '', '1197057540', '', 'hola@qweqwe.com', '100000', '', '', 'http://www.lolaa.com', 'lolaaa', '1', '2', '1', '0');
+INSERT INTO `tb_ads` VALUES (28, 'admin', '', 'visit', '1200639022', '27', '', '', '', '', '', '', '', '', '', '0', '0', '0');
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `tb_ads_categories`
+-- 
+
+CREATE TABLE `tb_ads_categories` (
+  `id` int(11) NOT NULL,
+  `catname` varchar(50) collate latin1_general_ci NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+-- 
+-- Volcar la base de datos para la tabla `tb_ads_categories`
+-- 
+
+INSERT INTO `tb_ads_categories` VALUES (1, 'Arts & Entertainment');
+INSERT INTO `tb_ads_categories` VALUES (5, 'Shopping & Free Offers');
+INSERT INTO `tb_ads_categories` VALUES (3, 'Earn Money');
+INSERT INTO `tb_ads_categories` VALUES (2, 'Bux Offers');
+INSERT INTO `tb_ads_categories` VALUES (6, 'Health & Beauty');
+INSERT INTO `tb_ads_categories` VALUES (7, 'Charity & Non-profit Organisations');
+INSERT INTO `tb_ads_categories` VALUES (8, 'Travelling');
+INSERT INTO `tb_ads_categories` VALUES (10, 'Other');
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `tb_advertisers`
+-- 
+
+CREATE TABLE `tb_advertisers` (
+  `id` int(11) NOT NULL auto_increment,
+  `pname` varchar(150) collate latin1_general_ci NOT NULL,
+  `pemail` varchar(150) collate latin1_general_ci NOT NULL,
+  `plan` varchar(150) collate latin1_general_ci NOT NULL,
+  `url` varchar(150) collate latin1_general_ci NOT NULL,
+  `description` varchar(150) collate latin1_general_ci NOT NULL,
+  `category` varchar(150) collate latin1_general_ci NOT NULL,
+  `ip` varchar(15) collate latin1_general_ci NOT NULL,
+  `bold` varchar(150) collate latin1_general_ci NOT NULL,
+  `highlight` varchar(150) collate latin1_general_ci NOT NULL,
+  `tipo` varchar(150) collate latin1_general_ci NOT NULL,
+  `money` varchar(150) collate latin1_general_ci NOT NULL,
+  KEY `id` (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=40 ;
+
+-- 
+-- Volcar la base de datos para la tabla `tb_advertisers`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `tb_buyref`
+-- 
+
+CREATE TABLE `tb_buyref` (
+  `id` int(11) NOT NULL auto_increment,
+  `refnum` varchar(15) NOT NULL,
+  `sets` varchar(150) NOT NULL,
+  `customer` varchar(150) NOT NULL,
+  `amount` varchar(150) NOT NULL,
+  `refset` varchar(20) NOT NULL,
+  `pemail` varchar(150) NOT NULL,
+  `ip` varchar(15) NOT NULL,
+  KEY `id` (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=43 ;
+
+-- 
+-- Volcar la base de datos para la tabla `tb_buyref`
+-- 
+
+INSERT INTO `tb_buyref` VALUES (1, '10', '18', 'admin', '', '', '', '');
+INSERT INTO `tb_buyref` VALUES (1, '15', '2', 'admin', '', '', '', '');
+INSERT INTO `tb_buyref` VALUES (1, '20', '1', 'admin', '', '', '', '');
+INSERT INTO `tb_buyref` VALUES (1, '50', '1', 'admin', '', '', '', '');
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `tb_clickpack`
+-- 
+
+CREATE TABLE `tb_clickpack` (
+  `id` int(11) NOT NULL,
+  `item` varchar(150) collate latin1_general_ci NOT NULL,
+  `howmany` varchar(150) collate latin1_general_ci NOT NULL,
+  `price` varchar(150) collate latin1_general_ci NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+-- 
+-- Volcar la base de datos para la tabla `tb_clickpack`
+-- 
+
+INSERT INTO `tb_clickpack` VALUES (1, 'hits', '1000', '1');
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `tb_config`
+-- 
+
+CREATE TABLE `tb_config` (
+  `id` int(11) NOT NULL auto_increment,
+  `item` varchar(15) collate latin1_general_ci NOT NULL,
+  `howmany` varchar(15) collate latin1_general_ci NOT NULL,
+  `price` varchar(150) collate latin1_general_ci NOT NULL,
+  KEY `id` (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=7 ;
+
+-- 
+-- Volcar la base de datos para la tabla `tb_config`
+-- 
+
+INSERT INTO `tb_config` VALUES (1, 'click', '1', '0.01');
+INSERT INTO `tb_config` VALUES (1, 'referalclick', '1', '0.01');
+INSERT INTO `tb_config` VALUES (1, 'premiumclick', '1', '10');
+INSERT INTO `tb_config` VALUES (1, 'premiumreferalc', '1', '25');
+INSERT INTO `tb_config` VALUES (1, 'hits', '1000', '1');
+INSERT INTO `tb_config` VALUES (1, 'hits', '2000', '2');
+INSERT INTO `tb_config` VALUES (1, 'hits', '3000', '3');
+INSERT INTO `tb_config` VALUES (1, 'hits', '5000', '5');
+INSERT INTO `tb_config` VALUES (1, 'hits', '10000', '10');
+INSERT INTO `tb_config` VALUES (1, 'payment', '1', '10.00');
+INSERT INTO `tb_config` VALUES (1, 'upgrade', '1', '45.99');
+INSERT INTO `tb_config` VALUES (1, 'hits', '500', '0.5');
+INSERT INTO `tb_config` VALUES (1, 'hits', '20000', '20');
+INSERT INTO `tb_config` VALUES (1, 'hits', '30000', '10');
+INSERT INTO `tb_config` VALUES (1, 'hits', '50000', '50');
+INSERT INTO `tb_config` VALUES (1, 'hits', '100000', '100');
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `tb_contact`
+-- 
+
+CREATE TABLE `tb_contact` (
+  `id` int(11) NOT NULL auto_increment,
+  `name` varchar(150) collate latin1_general_ci NOT NULL,
+  `email` varchar(150) collate latin1_general_ci NOT NULL,
+  `topic` varchar(150) collate latin1_general_ci NOT NULL,
+  `subject` varchar(150) collate latin1_general_ci NOT NULL,
+  `comments` varchar(200) collate latin1_general_ci NOT NULL,
+  `ip` varchar(15) collate latin1_general_ci NOT NULL,
+  KEY `id` (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=6 ;
+
+-- 
+-- Volcar la base de datos para la tabla `tb_contact`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `tb_history`
+-- 
+
+CREATE TABLE `tb_history` (
+  `id` int(11) NOT NULL auto_increment,
+  `user` varchar(150) collate latin1_general_ci NOT NULL,
+  `date` varchar(150) collate latin1_general_ci NOT NULL,
+  `amount` int(150) NOT NULL,
+  `method` varchar(150) collate latin1_general_ci NOT NULL,
+  `status` varchar(150) collate latin1_general_ci NOT NULL,
+  KEY `id` (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=7 ;
+
+-- 
+-- Volcar la base de datos para la tabla `tb_history`
+-- 
+
+INSERT INTO `tb_history` VALUES (1, 'admin', '', 0, 'paypal', '');
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `tb_messenger`
+-- 
+
+CREATE TABLE `tb_messenger` (
+  `id` int(11) NOT NULL auto_increment,
+  `sendfrom` varchar(11) collate latin1_general_ci NOT NULL,
+  `sendto` varchar(11) collate latin1_general_ci NOT NULL,
+  `date` varchar(35) collate latin1_general_ci NOT NULL,
+  `comments` varchar(150) collate latin1_general_ci NOT NULL,
+  `status` varchar(11) collate latin1_general_ci NOT NULL default 'unread',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=29 ;
+
+-- 
+-- Volcar la base de datos para la tabla `tb_messenger`
+-- 
+
+INSERT INTO `tb_messenger` VALUES (23, 'refadmin', 'admin', '09-01-08 03:24', 'hola mi amor', 'read');
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `tb_payme`
+-- 
+
+CREATE TABLE `tb_payme` (
+  `id` int(11) NOT NULL auto_increment,
+  `username` varchar(150) collate latin1_general_ci NOT NULL,
+  `pasword` varchar(150) collate latin1_general_ci NOT NULL,
+  `email` varchar(150) collate latin1_general_ci NOT NULL,
+  `pemail` varchar(150) collate latin1_general_ci NOT NULL,
+  `country` varchar(150) collate latin1_general_ci NOT NULL,
+  `money` varchar(150) collate latin1_general_ci NOT NULL,
+  `ip` varchar(15) collate latin1_general_ci NOT NULL,
+  KEY `id` (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=8 ;
+
+-- 
+-- Volcar la base de datos para la tabla `tb_payme`
+-- 
+
+INSERT INTO `tb_payme` VALUES (7, 'admin', '123456', 'email@domain.com', 'email@domain.com', '8', '10', '127.0.0.1');
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `tb_refset`
+-- 
+
+CREATE TABLE `tb_refset` (
+  `id` int(11) NOT NULL,
+  `howmany` int(5) NOT NULL,
+  `price` varchar(5) collate latin1_general_ci NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+-- 
+-- Volcar la base de datos para la tabla `tb_refset`
+-- 
+
+INSERT INTO `tb_refset` VALUES (4, 50, '35');
+INSERT INTO `tb_refset` VALUES (3, 20, '15');
+INSERT INTO `tb_refset` VALUES (2, 15, '11');
+INSERT INTO `tb_refset` VALUES (1, 10, '8');
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `tb_site`
+-- 
+
+CREATE TABLE `tb_site` (
+  `id` varchar(11) collate latin1_general_ci NOT NULL,
+  `sitename` varchar(30) collate latin1_general_ci NOT NULL,
+  `sitepp` varchar(30) collate latin1_general_ci NOT NULL,
+  KEY `id` (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+-- 
+-- Volcar la base de datos para la tabla `tb_site`
+-- 
+
+INSERT INTO `tb_site` VALUES ('1', 'VicPay', 'alertpay@yourdomain.com');
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `tb_upgrade`
+-- 
+
+CREATE TABLE `tb_upgrade` (
+  `id` int(11) NOT NULL auto_increment,
+  `username` varchar(150) NOT NULL,
+  `pemail` varchar(150) NOT NULL,
+  `email` varchar(150) NOT NULL,
+  `status` varchar(150) NOT NULL,
+  `date` varchar(150) NOT NULL,
+  `end` varchar(150) NOT NULL,
+  `ip` varchar(15) NOT NULL,
+  KEY `id` (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=25 ;
+
+-- 
+-- Volcar la base de datos para la tabla `tb_upgrade`
+-- 
+
+INSERT INTO `tb_upgrade` VALUES (22, 'admin', 'email@domain.com', 'email@domain.com', 'upgraded', '07-01-2008', '07-01-2008', '127.0.0.1');
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `tb_users`
+-- 
+
+CREATE TABLE `tb_users` (
+  `id` int(11) NOT NULL auto_increment,
+  `username` varchar(15) collate latin1_general_ci NOT NULL,
+  `password` varchar(100) collate latin1_general_ci NOT NULL,
+  `ip` varchar(15) collate latin1_general_ci NOT NULL,
+  `email` varchar(150) collate latin1_general_ci NOT NULL,
+  `pemail` varchar(150) collate latin1_general_ci NOT NULL,
+  `referer` varchar(15) collate latin1_general_ci NOT NULL,
+  `country` varchar(150) collate latin1_general_ci NOT NULL,
+  `visits` varchar(150) collate latin1_general_ci NOT NULL default '0',
+  `referals` varchar(150) collate latin1_general_ci NOT NULL default '0',
+  `referalvisits` varchar(150) collate latin1_general_ci NOT NULL default '0',
+  `money` varchar(150) collate latin1_general_ci NOT NULL default '0.00',
+  `paid` varchar(150) collate latin1_general_ci NOT NULL default '0.00',
+  `joindate` varchar(150) collate latin1_general_ci NOT NULL,
+  `lastlogdate` varchar(150) collate latin1_general_ci NOT NULL,
+  `lastiplog` varchar(150) collate latin1_general_ci NOT NULL,
+  `account` varchar(150) collate latin1_general_ci NOT NULL,
+  `user_status` varchar(15) collate latin1_general_ci NOT NULL default 'user',
+  KEY `id` (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=20 ;
+
+-- 
+-- Volcar la base de datos para la tabla `tb_users`
+-- 
+
+INSERT INTO `tb_users` VALUES (1, 'admin', '123456', '127.0.0.1', 'email@domain.com', 'email@domain.com', '', 'Australia', '0', '0', '0', '0', '0', '1184512264', '1200645980', '127.0.0.1', 'premium', 'admin');
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `users_online`
+-- 
+
+CREATE TABLE `users_online` (
+  `visitor` varchar(15) collate latin1_general_ci NOT NULL,
+  `lastvisit` int(14) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+-- 
+-- Volcar la base de datos para la tabla `users_online`
+-- 
+
+INSERT INTO `users_online` VALUES ('127.0.0.1', 1200646702);

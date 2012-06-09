@@ -1,0 +1,138 @@
+body, div, table, tr, td{
+	font-family: "Tahoma";
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-size: 12px;
+}
+
+.visited{
+	text-decoration: line-through;
+	color: #d6a849;
+}
+
+.serftab {
+	line-height: 18px;
+	border: 0;
+	border-bottom-width: 1px;
+	border-bottom-color: #d7980d;
+	border-bottom-style: solid;
+	
+	border-top-width: 1px;
+	border-top-color: #d7980d;
+	border-top-style: solid;
+}
+
+.serfurl {
+	font-size: 12px;
+}
+
+.serfcatname {
+	border: 0;
+	border-bottom-width: 1px;
+	border-bottom-color: #d7980d;
+	border-bottom-style: solid;
+	
+	border-right-width: 1px;
+	border-right-color: #d7980d;
+	border-right-style: solid;
+
+	border-left-width: 1px;
+	border-left-color: #d7980d;
+	border-left-style: solid;
+	
+	background-color: #f2b735;
+	color: white;
+}
+
+.hem{
+	font-size: 14px;
+	color: #d48934;
+}
+
+#crt{
+	font-size: 12px;
+}
+
+.ttext{
+	font-size: 12px;
+}
+
+#t_text{
+	background-repeat:repeat-x;
+	padding: 8 10 10 10;
+}
+
+.roottab{
+	background-repeat: no-repeat;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+.lefttab{
+	background-repeat: no-repeat;
+}
+
+.leftmenu{
+	padding: 272 0 0 28;
+}
+
+.centdiv{
+	padding: 0 0 0 0;
+}
+
+#zakaz{
+	padding: 0 10 0 0;
+}
+
+#bordup{
+	
+}
+
+.fontmenu{
+	font-size: 14;
+	font-family: 'Trebushet MS';
+}
+
+.fontmenu2{
+	font-size: 13;
+	font-family: 'Trebushet MS';
+}
+
+a:link, a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #4c2700;
+	text-decoration: none;
+}
+
+tr, td, table, .bt {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+a img {
+	border: none;
+}
+
+.actmi_0{
+	background-position: center center;
+	background-repeat: no-repeat;
+	font-size: 14px;
+}
+
+.actmi_1{
+	background-position: center center;
+	background-repeat: repeat-x;
+	font-size: 14px;
+}
+
+input.outfrm{
+	border:1px solid #f1b32a;
+	color:#930;
+	text-align: center;
+	/*font:14px tahoma,arial,sans-serif;*/
+	background:#fff;
+}
